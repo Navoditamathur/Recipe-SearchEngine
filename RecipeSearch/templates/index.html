@@ -1,0 +1,55 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Recipe</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+</head>
+<body>
+
+<div class="header">
+  <h1>Search Recipees</h1>
+</div>
+
+<div class="topnav">
+  <div class="search-container">
+    <form action="{% url 'searchrecipe' %}">
+      <input type="text" placeholder="Search.." name="search" id="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column side">
+       
+  </div>
+  
+  <div class="column middle">
+      <p> If the question, "What's for dinner, tonight?" has you in a constant state of panic, we've got some good news! These easy dinner recipes are here to save the day!</p>
+      
+      <p>From quick 30-minute meals and Instant Pot recipes to dinner ideas that require little clean-up (like sheet pan suppers), this list has something for every night of the week. The best part is that these easy dinners mean you can navigate between school drop-offs and busy work schedules while still having time for a quality family meal. 
+      </p>
+      
+      <p>Just take a cue from Ree Drummond (she even has a cookbook dedicated to super easy recipes): "I find myself gravitating toward recipes that are delicious but don't require a lot of prep or fuss," she says. If you feel the same way, read on for recipes that your whole family will love.
+      </p>
+
+      <p>Here, you'll find ideas for steak, pork, salmon, and chicken, not to mention some outside-the-box pasta recipes and other imaginative ideas to ensure you'll never be stuck in a cooking rut again. For instance, you can try the pretzel-crusted chicken with broccoli, the skillet lasagna, or the sloppy joe casserole for an updated take on a comfort food classic. There are also several air fryer recipes like the crispy air fryer pork chops served with mashed potatoes—it comes together in just 12 minutes!
+      </p>
+      
+      <p> So whether you're cooking for a crowd or just dinner for two, these easy recipes will become your weeknight heroes—because take-out just isn't the same as a home-cooked dinner.
+      </p>
+      
+      <p>Just search for your favourite food or any ingridients and you will be able to see  the recipes!</p>
+      
+      <p>All the best for your day filled with baking, cooking, grilling and filling the stomachs of your family</p>
+  </div>
+  
+
+</div>
+</body>
+</html>
